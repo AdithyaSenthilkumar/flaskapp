@@ -1,0 +1,35 @@
+from flask_restx import fields
+signup_fields={
+    'username':fields.String,
+    'email':fields.String,
+    'password':fields.String,
+    'role':fields.String
+}
+login_fields={
+    'username':fields.String,
+    'password':fields.String
+} 
+invoice_fields={
+    'division':fields.String,
+    'invoice_number':fields.String,
+    'invoice_date':fields.String,
+    'supplier_name':fields.String,
+    'supplier_address':fields.String,
+    'supplier_GSTIN':fields.String,
+    'customer_address':fields.String,
+    'customer_GSTIN':fields.String,
+    'PO_number':fields.String,
+    'total_amount':fields.String,
+    'total_tax_percentage':fields.String,
+    'job_ID':fields.String,
+    'vehicle_number':fields.String,
+    's3_filepath':fields.String,
+    'scanning_date':fields.DateTime,
+    'status':fields.String,
+    'processed_by':fields.String,
+    'approved_by':fields.String,
+    'reference_number':fields.String,
+    'data':fields.Raw,
+    'ocr_quality_score':fields.Float
+}
+
